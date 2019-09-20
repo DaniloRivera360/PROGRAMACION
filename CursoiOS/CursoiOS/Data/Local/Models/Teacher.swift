@@ -8,11 +8,18 @@
 
 import Foundation
 
-class Teacher: Hashable {
+enum TeacherType: String {
+    case intern
+    case extern
+}
+
+
+class Teacher: Hashable, CustomStringConvertible {
     // Equatable protocol implementation
     static func == (lhs: Teacher, rhs: Teacher) -> Bool {
         return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
+    
     
     // Hashable protocol implementation
     func hash(into hasher: inout Hasher) {
@@ -22,6 +29,15 @@ class Teacher: Hashable {
     var name: String?
     var email: String?
     var type: TeacherType?
+    
+    
+    // Use description var of CustomStringConvertible
+    // to print this class with custom String format
+    var description: String {
+        return "Student data: \(String(describing: name)) \(String(describing: email))"
+    }
+
+    
     
     convenience init(name: String, email: String? = nil, type: TeacherType? = nil) {
         self.init()
