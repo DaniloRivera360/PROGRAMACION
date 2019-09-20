@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  AppDanilo
+//  CursoiOS
 //
-//  Created by Dev2 on 19/09/2019.
-//  Copyright © 2019 edsr. All rights reserved.
+//  Created by David Jardon on 19/09/2019.
+//  Copyright © 2019 ds. All rights reserved.
 //
 
 import UIKit
