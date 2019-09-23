@@ -15,6 +15,7 @@
 		0FE27A2A2335365200F078BF /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A26233534ED00F078BF /* Student.swift */; };
 		0FE27A2C2335470700F078BF /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A2B2335470700F078BF /* Teacher.swift */; };
 		0FE27A2E2335472B00F078BF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A2D2335472B00F078BF /* Subject.swift */; };
+		D9A155122339155F0076C5EF /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A155112339155F0076C5EF /* DefaultData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0FE27A26233534ED00F078BF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0FE27A2B2335470700F078BF /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		0FE27A2D2335472B00F078BF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		D9A155112339155F0076C5EF /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				0FE27A25233532B600F078BF /* Models */,
+				D9A155112339155F0076C5EF /* DefaultData.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				0FE27A2C2335470700F078BF /* Teacher.swift in Sources */,
 				0FE27A2E2335472B00F078BF /* Subject.swift in Sources */,
 				0F504E382333FF79007EAFC0 /* ViewController.swift in Sources */,
+				D9A155122339155F0076C5EF /* DefaultData.swift in Sources */,
 				0FE27A2A2335365200F078BF /* Student.swift in Sources */,
 				0F504E362333FF79007EAFC0 /* AppDelegate.swift in Sources */,
 			);
