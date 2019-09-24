@@ -60,14 +60,26 @@
                                     <constraint firstAttribute="height" constant="150" id="7Jo-hU-HSC"/>
                                 </constraints>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Icono de UNIX" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btf-5F-Ypr">
+                                <rect key="frame" x="20" y="234" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EW6-uH-66C"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="btf-5F-Ypr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Fi-ug-KSL"/>
                             <constraint firstItem="fPh-a6-P6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="D9t-L3-67i"/>
                             <constraint firstItem="UCM-mk-zAq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PCG-vj-cL7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UCM-mk-zAq" secondAttribute="bottom" constant="20" id="SRC-gh-Vor"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fPh-a6-P6a" secondAttribute="trailing" constant="20" id="TSP-yc-mT9"/>
+                            <constraint firstItem="btf-5F-Ypr" firstAttribute="top" secondItem="fPh-a6-P6a" secondAttribute="bottom" constant="20" id="Ycp-L3-PxZ"/>
                             <constraint firstItem="fPh-a6-P6a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="d8d-Ch-8pv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btf-5F-Ypr" secondAttribute="trailing" constant="20" id="iWU-eU-uvJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
