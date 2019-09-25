@@ -8,28 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0F504E362333FF79007EAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504E352333FF79007EAFC0 /* AppDelegate.swift */; };
-		0F504E382333FF79007EAFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504E372333FF79007EAFC0 /* ViewController.swift */; };
+		0F504E382333FF79007EAFC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504E372333FF79007EAFC0 /* MainViewController.swift */; };
 		0F504E3B2333FF79007EAFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F504E392333FF79007EAFC0 /* Main.storyboard */; };
 		0F504E402333FF7A007EAFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F504E3E2333FF7A007EAFC0 /* LaunchScreen.storyboard */; };
+		0F6B42CE23391531007C10CA /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B42CD23391531007C10CA /* DefaultData.swift */; };
 		0FE27A1C2335184400F078BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE27A1B2335184400F078BF /* Assets.xcassets */; };
 		0FE27A2A2335365200F078BF /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A26233534ED00F078BF /* Student.swift */; };
 		0FE27A2C2335470700F078BF /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A2B2335470700F078BF /* Teacher.swift */; };
 		0FE27A2E2335472B00F078BF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A2D2335472B00F078BF /* Subject.swift */; };
-		D9A155122339155F0076C5EF /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A155112339155F0076C5EF /* DefaultData.swift */; };
+		D9478843233BB11B00732E37 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9478842233BB11B00732E37 /* StudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F504E322333FF79007EAFC0 /* CursoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F504E352333FF79007EAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F504E372333FF79007EAFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F504E372333FF79007EAFC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0F504E3A2333FF79007EAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F504E3F2333FF7A007EAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F504E412333FF7A007EAFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F6B42CD23391531007C10CA /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
 		0FE27A1B2335184400F078BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FE27A26233534ED00F078BF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0FE27A2B2335470700F078BF /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		0FE27A2D2335472B00F078BF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
-		D9A155112339155F0076C5EF /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
+		D9478842233BB11B00732E37 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,16 @@
 			children = (
 				0FE27A1D23352B1800F078BF /* App */,
 				0FE27A1F23352B8E00F078BF /* Resources */,
-				0FE27A1E23352B7B00F078BF /* Data */,
-				0FE27A2023352BD600F078BF /* UI */,
+				0FE27A2023352BD600F078BF /* Source */,
 			);
 			path = CursoiOS;
+			sourceTree = "<group>";
+		};
+		0F690DED233A2290003260E0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		0FE27A1D23352B1800F078BF /* App */ = {
@@ -95,18 +103,20 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		0FE27A2023352BD600F078BF /* UI */ = {
+		0FE27A2023352BD600F078BF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0FE27A1E23352B7B00F078BF /* Data */,
+				0F690DED233A2290003260E0 /* ViewModels */,
 				0FE27A2123352BED00F078BF /* Views */,
-				0FE27A2223352BF400F078BF /* Controllers */,
 			);
-			path = UI;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		0FE27A2123352BED00F078BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0FE27A2223352BF400F078BF /* Controllers */,
 				0FE27A2323352C5B00F078BF /* Storyboards */,
 			);
 			path = Views;
@@ -115,7 +125,8 @@
 		0FE27A2223352BF400F078BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0F504E372333FF79007EAFC0 /* ViewController.swift */,
+				0F504E372333FF79007EAFC0 /* MainViewController.swift */,
+				D9478842233BB11B00732E37 /* StudentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,8 +143,8 @@
 		0FE27A24233532AB00F078BF /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				0F6B42CD23391531007C10CA /* DefaultData.swift */,
 				0FE27A25233532B600F078BF /* Models */,
-				D9A155112339155F0076C5EF /* DefaultData.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -221,9 +232,10 @@
 			files = (
 				0FE27A2C2335470700F078BF /* Teacher.swift in Sources */,
 				0FE27A2E2335472B00F078BF /* Subject.swift in Sources */,
-				0F504E382333FF79007EAFC0 /* ViewController.swift in Sources */,
-				D9A155122339155F0076C5EF /* DefaultData.swift in Sources */,
+				0F504E382333FF79007EAFC0 /* MainViewController.swift in Sources */,
+				0F6B42CE23391531007C10CA /* DefaultData.swift in Sources */,
 				0FE27A2A2335365200F078BF /* Student.swift in Sources */,
+				D9478843233BB11B00732E37 /* StudentViewController.swift in Sources */,
 				0F504E362333FF79007EAFC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -2,12 +2,16 @@
 //  DefaultData.swift
 //  CursoiOS
 //
-//  Created by Dev2 on 23/09/2019.
+//  Created by David Jardon on 23/09/2019.
 //  Copyright © 2019 ds. All rights reserved.
 //
 
 import Foundation
 
+// MARK: -  Create list of Students
+
+// With Calendar and DateComponents class can create a new Date
+// Calendar.current return actual Calendar 'Gregorian'
 let defaultStudents = [Student(name: "Óliver",
                                email: "oliver@gmail.com",
                                birthdate: Calendar.current.date(from: DateComponents(year: 2019,
@@ -36,7 +40,9 @@ let defaultStudents = [Student(name: "Óliver",
                                email: "miguel@gmail.com",
                                birthdate: Calendar.current.date(from: DateComponents(year: 1983,
                                                                                      month: 6)))]
+// MARK: -  Create list of Teachers
 
+// With .extern or .intern we represent the Enum value for this properties.
 let defaultTeachers = [Teacher(name: "Juan",
                                email: "juan@gmail.com",
                                type: .intern),
@@ -53,6 +59,8 @@ let defaultTeachers = [Teacher(name: "Juan",
                                email: "marta@gmail.com",
                                type: .intern)]
 
+// MARK: - Create list of Subjects
+// Use a list.filter for get different values for each subject
 let defaultSubjects = [Subject(name: "Android",
                                teachers: defaultTeachers.filter{$0.name?.contains("u") ?? false},
                                students: defaultStudents.filter{$0.name?.contains("a") ?? false}),
