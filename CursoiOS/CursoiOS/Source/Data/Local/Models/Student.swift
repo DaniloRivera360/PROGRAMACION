@@ -11,9 +11,12 @@ import Foundation
 class Student: CustomStringConvertible {
     // MARK: Properties
     //Properties whit optional '?' value can be nil
+    
+    var avatar: String?
     var name: String?
     var email: String?
     var birthdate: Date?
+    
     
     // Use description var of CustomStringConvertible
     // to print this class with custom String format
@@ -22,12 +25,13 @@ class Student: CustomStringConvertible {
     }
 
     // Custom init (Constructor) class with default values
-    convenience init(name: String, email: String? = nil, birthdate: Date? = nil) {
+    convenience init(name: String, email: String? = nil, birthdate: Date? = nil, avatar: String? = nil) {
         self.init()
         
         // Always init all properties
         self.name = name
         self.email = email
         self.birthdate = birthdate
+        self.avatar = avatar
     }
 }
