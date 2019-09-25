@@ -38,11 +38,25 @@ extension StudensViewController: UITableViewDataSource, UITableViewDelegate {
     
     //funcion donde se indica la cantidad de celdas que habrá en el TableView, se calcula usando la clase 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return defaultStudents.count
+        return defaultStudents.count // mostrara las celdas tantas como elementos haya en nuestro listado.
     }
     
+    
+    // Esta funcion se ejecutara tantas veces como filas tenga en lo cual ya hemos indicado en la funcion anterior.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StudentViewCell",
+                                                 for: indexPath) as! StudentViewCell
+        
+        
+        if (indexPath.row < defaultStudents.count) {
+            
+            let student = defaultStudents[indexPath.row]
+            cell.configureCell(student: student)
+            
+            
+        }
+        
+        return cell
     }
     
 

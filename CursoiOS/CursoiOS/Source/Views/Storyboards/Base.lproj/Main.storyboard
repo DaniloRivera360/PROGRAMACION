@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="144" id="HGR-wE-IdV" customClass="StudentViewCell" customModule="CursoiOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentViewCell" rowHeight="144" id="HGR-wE-IdV" customClass="StudentViewCell" customModule="CursoiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGR-wE-IdV" id="HpK-qC-7Qa">
@@ -35,9 +35,11 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_student_2" translatesAutoresizingMaskIntoConstraints="NO" id="TUC-7G-RL0">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="118"/>
-                                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="100" id="Kpn-ma-1ZA"/>
+                                                                        <constraint firstAttribute="width" secondItem="TUC-7G-RL0" secondAttribute="height" multiplier="50:59" id="SG1-0s-D0h"/>
+                                                                        <constraint firstAttribute="height" constant="118" id="alY-nT-4zE"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UCk-qP-bjw">
@@ -60,7 +62,7 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="dpm-Fh-zkf" secondAttribute="bottom" constant="8" id="IYj-kv-NqT"/>
                                                         <constraint firstAttribute="trailing" secondItem="dpm-Fh-zkf" secondAttribute="trailing" constant="8" id="SDB-B2-QDc"/>
@@ -77,10 +79,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="studentImageView" destination="TUC-7G-RL0" id="Tla-yc-Uat"/>
-                                            <outlet property="studentNameLabel" destination="nzS-3M-0II" id="o5a-F9-SRW"/>
-                                            <outlet property="studentView" destination="a4E-ka-OIe" id="Car-BK-1aZ"/>
-                                            <outlet property="studentemailLabel" destination="C7b-5p-2Ux" id="9QI-vj-xYs"/>
+                                            <outlet property="studentEmailLabel" destination="C7b-5p-2Ux" id="dHd-Pw-2mU"/>
+                                            <outlet property="studentImageView" destination="TUC-7G-RL0" id="3fY-wJ-MKk"/>
+                                            <outlet property="studentNameLabel" destination="nzS-3M-0II" id="bu1-rj-J8T"/>
+                                            <outlet property="studentView" destination="a4E-ka-OIe" id="0S6-GC-gqp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
