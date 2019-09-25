@@ -17,6 +17,7 @@
 		0FE27A2C2335470700F078BF /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A2B2335470700F078BF /* Teacher.swift */; };
 		0FE27A2E2335472B00F078BF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE27A2D2335472B00F078BF /* Subject.swift */; };
 		D9478843233BB11B00732E37 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9478842233BB11B00732E37 /* StudentViewController.swift */; };
+		D9478845233BD68B00732E37 /* StudentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9478844233BD68B00732E37 /* StudentViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0FE27A2B2335470700F078BF /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		0FE27A2D2335472B00F078BF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		D9478842233BB11B00732E37 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		D9478844233BD68B00732E37 /* StudentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudentViewCell.swift; path = ../../../../../../../../../../Documents/StudentViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				0F504E372333FF79007EAFC0 /* MainViewController.swift */,
 				D9478842233BB11B00732E37 /* StudentViewController.swift */,
+				D9478844233BD68B00732E37 /* StudentViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				0FE27A2C2335470700F078BF /* Teacher.swift in Sources */,
 				0FE27A2E2335472B00F078BF /* Subject.swift in Sources */,
+				D9478845233BD68B00732E37 /* StudentViewCell.swift in Sources */,
 				0F504E382333FF79007EAFC0 /* MainViewController.swift in Sources */,
 				0F6B42CE23391531007C10CA /* DefaultData.swift in Sources */,
 				0FE27A2A2335365200F078BF /* Student.swift in Sources */,

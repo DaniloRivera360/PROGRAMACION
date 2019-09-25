@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="144" id="HGR-wE-IdV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="144" id="HGR-wE-IdV" customClass="StudentViewCell" customModule="CursoiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGR-wE-IdV" id="HpK-qC-7Qa">
@@ -76,6 +76,12 @@
                                                 <constraint firstItem="a4E-ka-OIe" firstAttribute="top" secondItem="HpK-qC-7Qa" secondAttribute="top" constant="5" id="w5A-gG-SDy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="studentImageView" destination="TUC-7G-RL0" id="Tla-yc-Uat"/>
+                                            <outlet property="studentNameLabel" destination="nzS-3M-0II" id="o5a-F9-SRW"/>
+                                            <outlet property="studentView" destination="a4E-ka-OIe" id="Car-BK-1aZ"/>
+                                            <outlet property="studentemailLabel" destination="C7b-5p-2Ux" id="9QI-vj-xYs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
