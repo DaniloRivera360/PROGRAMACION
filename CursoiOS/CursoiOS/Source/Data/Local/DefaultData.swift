@@ -52,19 +52,24 @@ let defaultStudents = [Student(name: "Óliver",
 // With .extern or .intern we represent the Enum value for this properties.
 let defaultTeachers = [Teacher(name: "Juan",
                                email: "juan@gmail.com",
-                               type: .intern),
+                               type: .intern,
+                               avatar: "img_teacher_1"),
                        Teacher(name: "Lucía",
                                email: "lucia@gmail.com",
-                               type: .extern),
+                               type: .extern,
+                               avatar: "img_teacher_2"),
                        Teacher(name: "Paula",
                                email: "paula@gmail.com",
-                               type: .extern),
+                               type: .extern,
+                               avatar: "img_teacher_3"),
                        Teacher(name: "Javier",
                                email: "javier@gmail.com",
-                               type: .intern),
+                               type: .intern,
+                               avatar: "img_teacher_4"),
                        Teacher(name: "Marta",
                                email: "marta@gmail.com",
-                               type: .intern)]
+                               type: .intern,
+                               avatar: "img_teacher_5")]
 
 // MARK: - Create list of Subjects
 // Use a list.filter for get different values for each subject
