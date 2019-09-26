@@ -10,7 +10,7 @@ import UIKit
 
 
 // creando clase que controle TableViewCell
-class SubjectsViewCell: UITableViewCell {
+class SubjectsViewCell: UICollectionViewCell {
     
     //Declaración de los Outlets que he creado dentro de mi TableCellView
     @IBOutlet weak var subjectView: UIView!

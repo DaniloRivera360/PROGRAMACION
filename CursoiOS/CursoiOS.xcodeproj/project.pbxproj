@@ -140,8 +140,8 @@
 				D9478844233BD68B00732E37 /* StudentViewCell.swift */,
 				D9C9CE79233D0FB20007AE58 /* TeacherViewController.swift */,
 				D9C9CE77233D0DE70007AE58 /* TeacherViewCell.swift */,
-				D9C9CE7B233D190C0007AE58 /* SubjectsViewCell.swift */,
 				D9C9CE7D233D191F0007AE58 /* SubjectsViewController.swift */,
+				D9C9CE7B233D190C0007AE58 /* SubjectsViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
