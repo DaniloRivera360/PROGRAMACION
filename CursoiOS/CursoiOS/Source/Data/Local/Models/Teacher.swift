@@ -40,6 +40,7 @@ class Teacher: Hashable, CustomStringConvertible {
     var email: String?
     var type: TeacherType?
     
+    
     // Use description var of CustomStringConvertible
     // to print this class with custom String format
     var description: String {
