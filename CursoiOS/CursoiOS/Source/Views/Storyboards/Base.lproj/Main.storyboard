@@ -21,14 +21,14 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentViewCell" rowHeight="145" id="HGR-wE-IdV" customClass="StudentViewCell" customModule="CursoiOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentViewCell" rowHeight="145" id="HGR-wE-IdV" customClass="StudentViewCell" customModule="CursoiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGR-wE-IdV" id="HpK-qC-7Qa">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-ka-OIe">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-ka-OIe">
                                                     <rect key="frame" x="5" y="5" width="404" height="135"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-Fh-zkf">
@@ -36,7 +36,6 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_student_2" translatesAutoresizingMaskIntoConstraints="NO" id="TUC-7G-RL0">
                                                                     <rect key="frame" x="0.0" y="0.0" width="101" height="119"/>
-                                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="100" id="Kpn-ma-1ZA"/>
                                                                         <constraint firstAttribute="width" secondItem="TUC-7G-RL0" secondAttribute="height" multiplier="50:59" id="SG1-0s-D0h"/>
@@ -63,7 +62,7 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="dpm-Fh-zkf" secondAttribute="bottom" constant="8" id="IYj-kv-NqT"/>
                                                         <constraint firstAttribute="trailing" secondItem="dpm-Fh-zkf" secondAttribute="trailing" constant="8" id="SDB-B2-QDc"/>
@@ -139,7 +138,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeacherViewCell" rowHeight="145" id="DNb-in-PoT" customClass="TeacherViewCell" customModule="CursoiOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeacherViewCell" rowHeight="145" id="DNb-in-PoT" customClass="TeacherViewCell" customModule="CursoiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DNb-in-PoT" id="7W7-AH-93C">
@@ -179,7 +178,6 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="7hd-05-EoB" firstAttribute="top" secondItem="0Ca-R8-cI8" secondAttribute="top" constant="8" id="20r-np-sbE"/>
                                                         <constraint firstItem="7hd-05-EoB" firstAttribute="leading" secondItem="0Ca-R8-cI8" secondAttribute="leading" constant="8" id="Un7-Fe-p6P"/>
@@ -238,43 +236,52 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gqg-54-53M">
                                     <size key="itemSize" width="150" height="149"/>
-                                    <size key="estimatedItemSize" width="150" height="149"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SubjectsViewCell" id="N1O-Pb-klM" customClass="SubjectsViewCell" customModule="CursoiOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SubjectsViewCell" id="N1O-Pb-klM" customClass="SubjectsViewCell" customModule="CursoiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mvC-MA-taF">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iJu-WO-wB8">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGD-XW-qDC">
                                                     <rect key="frame" x="8" y="8" width="134" height="134"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4CB-g9-4Hm">
-                                                            <rect key="frame" x="27" y="0.0" width="80" height="80"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="80" id="Jc3-kJ-puF"/>
-                                                                <constraint firstAttribute="height" constant="80" id="bSf-yf-0qk"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNE-Fz-8U6">
-                                                            <rect key="frame" x="46" y="88" width="42" height="46"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iJu-WO-wB8">
+                                                            <rect key="frame" x="27" y="13" width="80" height="108.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4CB-g9-4Hm">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="80" id="Jc3-kJ-puF"/>
+                                                                        <constraint firstAttribute="height" constant="80" id="bSf-yf-0qk"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNE-Fz-8U6">
+                                                                    <rect key="frame" x="19" y="88" width="42" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
-                                                </stackView>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="iJu-WO-wB8" firstAttribute="centerY" secondItem="aGD-XW-qDC" secondAttribute="centerY" id="4uz-7H-YVS"/>
+                                                        <constraint firstItem="iJu-WO-wB8" firstAttribute="centerX" secondItem="aGD-XW-qDC" secondAttribute="centerX" id="e8P-Je-4R1"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="iJu-WO-wB8" secondAttribute="trailing" constant="8" id="EqX-xC-E8V"/>
-                                                <constraint firstItem="iJu-WO-wB8" firstAttribute="top" secondItem="mvC-MA-taF" secondAttribute="top" constant="8" id="Kf7-YI-Nw8"/>
-                                                <constraint firstItem="iJu-WO-wB8" firstAttribute="leading" secondItem="mvC-MA-taF" secondAttribute="leading" constant="8" id="c5F-cy-tjX"/>
-                                                <constraint firstAttribute="bottom" secondItem="iJu-WO-wB8" secondAttribute="bottom" constant="8" id="oNP-l3-Tdi"/>
+                                                <constraint firstItem="aGD-XW-qDC" firstAttribute="leading" secondItem="mvC-MA-taF" secondAttribute="leading" constant="8" id="FSt-Se-PQX"/>
+                                                <constraint firstAttribute="bottom" secondItem="aGD-XW-qDC" secondAttribute="bottom" constant="8" id="GwW-Jg-rMX"/>
+                                                <constraint firstAttribute="trailing" secondItem="aGD-XW-qDC" secondAttribute="trailing" constant="8" id="OmB-OO-DG4"/>
+                                                <constraint firstItem="aGD-XW-qDC" firstAttribute="top" secondItem="mvC-MA-taF" secondAttribute="top" constant="8" id="xY3-Ua-84h"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
@@ -282,6 +289,7 @@
                                         <connections>
                                             <outlet property="subjectImageView" destination="4CB-g9-4Hm" id="6ly-WU-3ex"/>
                                             <outlet property="subjectNameLabel" destination="aNE-Fz-8U6" id="kSO-Qu-Vrc"/>
+                                            <outlet property="subjectView" destination="aGD-XW-qDC" id="Y6q-IH-fBw"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

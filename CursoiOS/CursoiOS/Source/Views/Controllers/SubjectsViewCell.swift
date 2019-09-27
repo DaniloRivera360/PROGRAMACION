@@ -28,6 +28,19 @@ class SubjectsViewCell: UICollectionViewCell {
         subjectNameLabel.text = nil
     }
     
+    //se llama solo la primera vezs que se carga la vista es decir en memoria.(este metodo nos permite configurar la vista de la view)
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        //redondea las 4 esquinas de la vista
+        subjectView.layer.cornerRadius = 0.8
+        
+        subjectView.configureShadows()
+       subjectView.layer.cornerRadius = 8.0
+//        subjectView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        
+    }
+    
     //Declarando una  funcion para pasarle datos en las celdas de tipo: Student que es la clase que ya teniamos
     func configureCell(subject: Subject) {
         // TODO: Agregar imagen a Subject

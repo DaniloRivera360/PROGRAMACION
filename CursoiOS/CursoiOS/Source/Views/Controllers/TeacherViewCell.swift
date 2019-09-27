@@ -28,6 +28,20 @@ class TeacherViewCell: UITableViewCell {
         teacherEmailLabel.text = nil
     }
     
+    
+    //se llama solo la primera vezs que se carga la vista es decir en memoria.(este metodo nos permite configurar la vista de la view)
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        //redondea las 4 esquinas de la vista
+        teacherView.layer.cornerRadius = 10.0
+        
+        teacherView.configureShadows()
+        
+    }
+    
+    
+    
     //Declarando una  funcion para pasarle datos en las celdas de tipo: Student que es la clase que ya teniamos
     func configureCell(teacher: Teacher) {
         // TODO: Agregar imagen a Student
